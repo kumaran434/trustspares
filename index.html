@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <!-- Polyfill for 'process' to prevent blank screen crash in production -->
+    <script>
+      window.process = window.process || { env: {} };
+    </script>
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="google6bf7c0b63501a40b" />
+    
+    <!-- SEO Description & Keywords -->
+    <meta name="description" content="TrustSpares is India's safest marketplace for Mobile Technicians. Buy & Sell Original Mobile Spares, Motherboards, and Tools with Admin Escrow Protection." />
+    <meta name="keywords" content="TrustSpares, Mobile Spares, Technician Market, Mobile Motherboard, Original Display, Second Hand Mobile Spares, Mobile Technician App, Escrow Payment" />
+    <meta name="author" content="TrustSpares India" />
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="TrustSpares - Secure Mobile Technician Market" />
+    <meta property="og:description" content="Buy Original Mobile Spares securely. Admin holds payment until delivery. No Fraud." />
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/2438/2438078.png" />
+    <meta property="og:url" content="https://trustspares.in" />
+    <meta property="og:type" content="website" />
+
+    <title>TrustSpares - Buy & Sell Mobile Spares Securely</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://cdn-icons-png.flaticon.com/512/2438/2438078.png" />
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2438/2438078.png" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2438/2438078.png" />
+    
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TrustSpares",
+      "url": "https://trustspares.in",
+      "logo": "https://cdn-icons-png.flaticon.com/512/2438/2438078.png",
+      "sameAs": [
+        "https://trustspares.in"
+      ]
+    }
+    </script>
+
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; margin: 0; padding: 0; }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none;  scrollbar-width: none; }
+      #root:empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: sans-serif;
+        color: #666;
+      }
+      #root:empty::after {
+        content: "Loading TrustSpares...";
+        font-weight: bold;
+      }
+    </style>
+
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.2.3",
+    "react/jsx-runtime": "https://esm.sh/react@19.2.3/jsx-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.3/client",
+    "react-dom": "https://esm.sh/react-dom@19.2.3",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.24.0?deps=react@19.2.3,react-dom@19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@0.400.0?deps=react@19.2.3",
+    "firebase/app": "https://esm.sh/firebase@12.9.0/app",
+    "firebase/auth": "https://esm.sh/firebase@12.9.0/auth?deps=firebase@12.9.0",
+    "firebase/firestore": "https://esm.sh/firebase@12.9.0/firestore?deps=firebase@12.9.0",
+    "firebase/storage": "https://esm.sh/firebase@12.9.0/storage?deps=firebase@12.9.0",
+    "firebase/messaging": "https://esm.sh/firebase@12.9.0/messaging?deps=firebase@12.9.0",
+    "firebase/functions": "https://esm.sh/firebase@12.9.0/functions?deps=firebase@12.9.0",
+    "react-qr-code": "https://esm.sh/react-qr-code@2.0.15?deps=react@19.2.3",
+    "vite": "https://esm.sh/vite@5.3.3",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@4.3.1",
+    "react-helmet-async": "https://esm.sh/react-helmet-async@2.0.5?deps=react@19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "firebase/": "https://esm.sh/firebase@^12.9.0/",
+    "firebase-functions/": "https://esm.sh/firebase-functions@^7.0.3/",
+    "firebase-admin/": "https://esm.sh/firebase-admin@^13.6.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^8.0.2"
+  }
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

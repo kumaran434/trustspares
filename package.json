@@ -1,0 +1,45 @@
+{
+  "name": "trustspares",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "node server.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@google/genai": "^1.38.0",
+    "@imgly/background-removal": "^1.7.0",
+    "express": "^5.2.1",
+    "firebase": "12.9.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.400.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-helmet-async": "^2.0.5",
+    "react-leaflet": "^5.0.0",
+    "react-qr-code": "^2.0.15",
+    "react-router-dom": "^6.24.0",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0",
+    "@types/express": "^5.0.6",
+    "@types/leaflet": "^1.9.21",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
+  },
+  "overrides": {
+    "react-helmet-async": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  }
+}

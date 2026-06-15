@@ -1,0 +1,43 @@
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // 1. Deals Images: 
+    // Allow read to everyone.
+    // Allow write/delete ONLY to the owner (Seller).
+    match /deals/{userId}/{fileName} {
+      allow read: if true;
+      allow write: if isSignedIn() && request.auth.uid == userId;
+      allow delete: if isSignedIn() && request.auth.uid == userId;
+    }
+
+    // 2. KYC Documents
+    match /kyc/{userId}/{fileName} {
+      allow read: if true; 
+      allow write: if isSignedIn() && request.auth.uid == userId;
+    }
+
+    // 3. User Avatars
+    match /avatars/{userId}/{fileName} {
+      allow read: if true;
+      allow write: if isSignedIn() && request.auth.uid == userId;
+    }
+
+    // 4. Evidence (Disputes/Packing)
+    match /evidence/{dealId}/{fileName} {
+      allow read: if true;
+      allow write: if isSignedIn();
+    }
+
+    // Fallback
+    match /{allPaths=**} {
+      allow read: if true;
+      allow write: if isSignedIn();
+    }
+  }
+}

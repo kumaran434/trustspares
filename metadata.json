@@ -1,0 +1,12 @@
+{
+  "name": "  TrustSpares 2",
+  "description": "A secure escrow platform for mobile technicians to buy and sell spares without fear of fraud. Solves payment and quality disputes using AI.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
