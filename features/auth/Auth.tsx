@@ -13,7 +13,7 @@ const Auth: React.FC = () => {
   const from = location.state?.from?.pathname || '/';
   const searchParams = new URLSearchParams(location.search);
   const brandParam = searchParams.get('brand');
-  const isTemperKing = brandParam === 'temper-king' || location.state?.from?.pathname === '/temper-king';
+  const isTemperKing = false;
   
   useEffect(() => {
       if (currentUser) {

@@ -142,10 +142,10 @@ const MyShop: React.FC = () => {
           </div>
       )}
 
-      <div className="p-5 rounded-3xl shadow-sm border border-gray-200 mb-6 bg-gradient-to-r from-blue-50 to-indigo-50 relative overflow-hidden">
+      <div className="p-6 rounded-3xl shadow-sm border border-slate-200 mb-6 bg-white relative overflow-hidden">
           <div className="relative z-10">
               <h1 className="text-3xl font-black text-slate-900 leading-none mb-4">ADMIN STOCK</h1>
-              <button onClick={() => navigate('/create')} className="w-full bg-slate-900 text-white px-5 py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 shadow-lg">
+              <button onClick={() => navigate('/create')} className="w-full bg-slate-900 hover:bg-slate-850 text-white px-5 py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 shadow-lg transition">
                   <Plus size={18} /> Add Product
               </button>
           </div>
@@ -191,9 +191,9 @@ const MyShop: React.FC = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {displayedDeals.length === 0 ? (
-              <div className="col-span-full text-center py-20 bg-gray-50 rounded-3xl border border-dashed border-gray-200">
-                  <ShoppingBag size={40} className="mx-auto text-gray-300 mb-3"/>
-                  <p className="text-gray-400 font-bold text-sm">No items in this section.</p>
+              <div className="col-span-full text-center py-20 bg-white rounded-3xl border border-dashed border-slate-200">
+                  <ShoppingBag size={40} className="mx-auto text-slate-300 mb-3"/>
+                  <p className="text-slate-400 font-bold text-sm">No items in this section.</p>
               </div>
           ) : (
               displayedDeals.map(deal => (

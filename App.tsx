@@ -17,7 +17,6 @@ import MyOrders from './features/dashboard/MyOrders';
 import TechnicianOnboarding from './features/technician/TechnicianOnboarding'; // CHANGED IMPORT
 import PostMaker from './features/tools/PostMaker';
 import MagicStudio from './features/studio/MagicStudio';
-import TemperKing from './features/dashboard/TemperKing';
 import ScrollToTop from './components/ScrollToTop'; 
 import InventoryTab from './features/admin/tabs/InventoryTab'; 
 import { UserRole, DealStatus } from './types';
@@ -230,7 +229,6 @@ const AppContent: React.FC = () => {
                 {/* Post Maker (Tools) - Accessible to everyone for sharing */}
                 <Route path="/post-maker" element={<PostMaker />} />
                 <Route path="/magic-studio" element={<MagicStudio />} />
-                <Route path="/temper-king" element={<TemperKing />} />
 
                 {/* Fallback */}
                 <Route path="*" element={<Navigate to="/" replace />} />

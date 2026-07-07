@@ -27,8 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const isSellerPage = location.pathname.startsWith('/seller/');
   const isLoginPage = location.pathname === '/login';
-  const isTemperKingPage = location.pathname === '/temper-king';
-  const isMinimalLayout = isSellerPage || isLoginPage || isTemperKingPage;
+  const isMinimalLayout = isSellerPage || isLoginPage;
 
   const userNotifications = notifications.filter(n => n.userId === currentUser?.id).sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   const unreadCount = userNotifications.filter(n => !n.read).length;
